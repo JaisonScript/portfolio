@@ -356,7 +356,7 @@ h6 {
 
 @media (max-width: 500px) {
   #hero {
-    background-position-x: -700px;
+    background: url("../img/jaison.jpg") top center no-repeat;
   }
 }
 

@@ -10,7 +10,7 @@ var mail="mailto:"+S.email+"?subject="+encodeURIComponent("Hello "+P.firstName);
 function btn(c,h,ic,t,ext){return'<a class="btn '+c+'" href="'+h+'"'+(ext?' target="_blank" rel="noopener"':'')+'>'+ic+t+'</a>'}
 function list(a,f,d){return(a||[]).map(function(x,i){return f(x,'style="--d:'+(i*(d||.08))+'s"')}).join("")}
 
-document.title=P.firstName+" "+P.lastName+" — Portfolio";
+document.title=P.firstName+" "+P.lastName+" | Senior Software Engineer & Full-Stack Developer";
 $("#name").innerHTML="Hi, I’m <span class=\"grad\">"+P.firstName+" "+P.lastName+"</span>";
 $("#headline").textContent=P.headline;
 $("#fname").textContent=P.firstName+" "+P.lastName;

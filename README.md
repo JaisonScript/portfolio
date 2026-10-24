@@ -28,6 +28,7 @@ Then visit [http://localhost:8000](http://localhost:8000).
 │   └── social.js
 ├── images/
 │   ├── favicon.svg
+│   ├── og-image.jpg
 │   └── profile.jpg
 └── js/
     └── main.js
@@ -77,5 +78,6 @@ The `link` value for a project or certification can be an empty string (`""`) wh
 - Edit `js/main.js` to change how data is rendered or how interactions behave.
 - Replace `images/profile.jpg` with your own portrait, and update `PROFILE.photo` in `data/profile.js` if you use a different path.
 - `images/favicon.svg` is the single favicon linked by `index.html`; it contains the profile photo embedded in the SVG.
+- `images/og-image.jpg` is the 1200 × 630 social preview image used by Open Graph and Twitter metadata. Update its public URL in `index.html` if the deployment URL changes.
 
 The site loads the Space Grotesk font from Google Fonts, so an internet connection is needed for that font. A system-font fallback is provided.

@@ -76,6 +76,7 @@ The `link` value for a project or certification can be an empty string (`""`) wh
 
 - Edit `css/style.css` to adjust colors, typography, spacing, breakpoints, and animations.
 - Edit `js/main.js` to change how data is rendered or how interactions behave.
+- Experience and education cards expand on hover or keyboard focus and collapse when focus/pointer leaves. Projects appear as a continuously looping shelf of vertical titles with no visible scrollbar; hover or keyboard focus expands a fixed-height card without a close button or nested scrolling.
 - Replace `images/profile.jpg` with your own portrait, and update `PROFILE.photo` in `data/profile.js` if you use a different path.
 - `images/favicon.svg` is the single favicon linked by `index.html`; it contains the profile photo embedded in the SVG.
 - `images/og-image.jpg` is the 1200 × 630 social preview image used by Open Graph and Twitter metadata. Update its public URL in `index.html` if the deployment URL changes.

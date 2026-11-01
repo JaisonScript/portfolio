@@ -15,6 +15,8 @@ $("#name").innerHTML="Hi, I’m <span class=\"grad\">"+P.firstName+" "+P.lastNam
 $("#headline").textContent=P.headline;
 $("#fname").textContent=P.firstName+" "+P.lastName;
 $("#yr").textContent=new Date().getFullYear();
+$("#heroLocation").textContent=P.location;
+$("#heroProof").innerHTML=P.stats.slice(0,3).map(function(s){return'<div class="hero-proof-item"><strong>'+s.value+s.suffix+'</strong><span>'+s.label+'</span></div>'}).join("");
 $("#photo").innerHTML='<img src="'+P.photo+'" alt="'+P.firstName+'" onerror="this.outerHTML=\'<div>'+P.firstName[0]+P.lastName[0]+'</div>\'">';
 $("#heroBtns").innerHTML=btn("w",wa,I.wa,"Chat on WhatsApp",1)+btn("",S.linkedin,I.li,"LinkedIn",1)+btn("m",mail,I.ml,"Email me");
 $("#ctaBtns").innerHTML=btn("w",wa,I.wa,S.whatsapp.display,1)+btn("m",mail,I.ml,S.email)+btn("",S.linkedin,I.li,"Connect on LinkedIn",1);
